@@ -1,0 +1,9 @@
+.header-container{
+    background-color: rgb(155, 207, 207);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+}
