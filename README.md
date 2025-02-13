@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# TaskFlow - Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TaskFlow is a simple task management application built using React.js for the frontend, Node.js/Express.js for the backend, and SQLite for the database.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Add new tasks to the list.
+- Delete tasks from the list.
+- Fetch tasks from the backend.
+- Loader animation while fetching data.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** SQLite
+- **Styling:** CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed:
 
-### `npm run build`
+- Node.js
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+git clone https://github.com/Surya413413/taskflow.git
+cd taskflow
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Dependencies
 
-### `npm run eject`
+#### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+cd frontend
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```sh
+cd backend
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Running the Application
 
-## Learn More
+#### Start the Backend Server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+cd backend
+node index.js
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Start the Frontend
 
-### Code Splitting
+```sh
+cd frontend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## API Endpoints
 
-### Analyzing the Bundle Size
+### GET /todos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Fetches all tasks.
 
-### Making a Progressive Web App
+### POST /todos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Adds a new task.
 
-### Advanced Configuration
+### DELETE /todos/\:id
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Deletes a task by ID.
 
-### Deployment
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The backend is deployed using Render:
 
-### `npm run build` fails to minify
+```
+https://todos-db2025backend.onrender.com/todos/
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Pull requests are welcome. Please open an issue first to discuss any major changes.
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+
+
+
